@@ -37,17 +37,17 @@ RUN if [ ! -f /opt/libpq5_${PG_VERSION}.1C_${PG_ARCH}.deb ]; then \
     exit 1; fi
 
 RUN if [ ! -f /opt/postgresql-${PG_MAJOR}_${PG_VERSION}.1C_${PG_ARCH}.deb ]; then \
-    echo "File 'postgresql-${PG_MAJOR}_${PG_VERSION}.1C_${PG_ARCH}.deb' does not exist.";
+    echo "File 'postgresql-${PG_MAJOR}_${PG_VERSION}.1C_${PG_ARCH}.deb' does not exist."; \
     echo "DIST_1C_POSTGRES_9_2 set incorrectly. See README.md file."; \
     exit 1; fi
 
 RUN if [ ! -f /opt/postgresql-client-${PG_MAJOR}_${PG_VERSION}.1C_${PG_ARCH}.deb ]; then \
-    echo "File 'postgresql-client-${PG_MAJOR}_${PG_VERSION}.1C_${PG_ARCH}.deb' does not exist.";
+    echo "File 'postgresql-client-${PG_MAJOR}_${PG_VERSION}.1C_${PG_ARCH}.deb' does not exist."; \
     echo "DIST_1C_POSTGRES_9_2 set incorrectly. See README.md file."; \
     exit 1; fi
 
 RUN if [ ! -f /opt/postgresql-contrib-${PG_MAJOR}_${PG_VERSION}.1C_${PG_ARCH}.deb ]; then \
-    echo "File 'postgresql-contrib-${PG_MAJOR}_${PG_VERSION}.1C_${PG_ARCH}.deb' does not exist.";
+    echo "File 'postgresql-contrib-${PG_MAJOR}_${PG_VERSION}.1C_${PG_ARCH}.deb' does not exist."; \
     echo "DIST_1C_POSTGRES_9_2 set incorrectly. See README.md file."; \
     exit 1; fi
 
